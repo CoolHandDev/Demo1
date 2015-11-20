@@ -6,10 +6,10 @@
 
 (function(app){
 
-        app.controller('myDirectiveController', function($scope){
+        app.controller('myDirectiveController', ['$scope', function($scope){
 
             $scope.myDirectiveValue = "this is value from the myDirectiveController";
 
-        });
+        }]);
     }
 )(angular.module('demo1'));

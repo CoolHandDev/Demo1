@@ -5,11 +5,11 @@
 'use strict';
 
 (function(app){
-        app.directive('myDirective', function(){
+        app.directive('myDirective',[ function(){
             return{
                 restrict:"E",
                 templateUrl: "templates/myDirective.html"
             };
-        })
+        }])
     }
 )(angular.module('demo1'));

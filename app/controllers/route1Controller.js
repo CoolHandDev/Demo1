@@ -5,7 +5,7 @@
 
 (function(app){
 
-        app.controller('route1Controller', function($scope, service1){
+        app.controller('route1Controller', ['$scope', 'service1', function($scope, service1){
 
             var pizza = {
                 name: "Margherita",
@@ -26,6 +26,6 @@
 
             $scope.submitPizza = service1.submitData;
 
-        });
+        }]);
 }
 )(angular.module('demo1'));

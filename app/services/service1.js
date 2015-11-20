@@ -2,7 +2,7 @@
 
 (function(app){
 
-        app.factory('service1', function($http){
+        app.factory('service1', ['$http', function($http){
 
             var service1Function1 = function() {
                 console.log('this is service1Function1');
@@ -23,5 +23,5 @@
                 service1Function1: service1Function1,
                 submitData: submitData
             }
-        })
+        }])
 })(angular.module('demo1'));
