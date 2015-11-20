@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/"/>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="demo1">
+
+    <div>
+        I love pizza on html
+        <br>
+        {{100/5}}
+    </div>
+    <br>
+    <br>
+
+    <div ng-view>
+
+
+    </div>
+    <br>
+    <br>
+    <my-Directive></my-Directive>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/service1.js"></script>
+    <script src="controllers/route1Controller.js"></script>
+    <script src="controllers/myDirectiveController.js"></script>
+    <script src="directives/myDirective.js"></script>
+
+</body>
+</html>
